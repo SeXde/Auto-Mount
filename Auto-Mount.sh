@@ -1,8 +1,10 @@
 #!/bin/bash
 
 if test "$EUID" -ne 0; then
+
    echo "This script must be run as root"
    exit 1
+   
 fi
 
 exitFlag=false
